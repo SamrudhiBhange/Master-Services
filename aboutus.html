@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>About Us</title>
+</head>
+<body onload="slider()">
+    <nav class="navbar background" style="cursor: pointer;">
+        <img class="logo" src="images/logo.jpeg" alt="logo" style=" width: 10%; margin-left: 2em;" />
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="micon">
+            <ul class="nav-links">
+                <i class="material-icons" style="margin-left: 10em; ">home</i>
+                <li><a href="index.html" style="text-decoration: none;">Home</a></li>
+                <i class="material-icons">donut_large</i>
+                <li><a href="aboutus.html">About</a></li>
+                <i class="material-icons">business_center</i>
+                <li><a href="services.html"> Services</a></li>
+                <i class="material-icons">tv</i>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <i class="material-icons">timeline</i>
+                <li><a href="careers.html">Careers</a></li>
+                <i class="material-icons">contacts</i>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="banner" style="width: 100%; height: 70vh;">
+        <div class="slider">
+            <img src="images/ab-1.jpg" id="slideImg" style="width: 100%; height: auto;" />
+        </div>
+
+    </div>
+
+    <script>
+        var slideImg = document.getElementById("slideImg");
+
+        var images = new Array(
+            "images/ab-1.jpg",
+            "images/ab-2.jpg",
+            "images/ab-3.jpg"
+        );
+
+        var len = images.length;
+        var i = 0;
+
+        function slider() {
+            if (i > len - 1) {
+                i = 0;
+            }
+            slideImg.src = images[i];
+            i++;
+            setTimeout('slider()', 3000);
+        }
+    </script>
+
+    <section class="dark-bg text-center section-padding contact-wrap" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="arrow" style="margin: 0.67em 0; font-weight: bold; font-size: 30px; text-transform: uppercase; color: #353535; letter-spacing: 1px; padding-bottom: 0px; scroll-behavior: smooth; "><span> About </span>Us</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="info1">
+        <div>
+            <p style="color: #353535; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-left: 3em; padding-right: 1px;">
+                <b>Master Services</b> is the market leader in Information Technology Consulting, Digital Solutions, Services Delivery, and Infrastructure Management services in the geographies that we operate in. We evaluate, plan, implement, support, manage and optimize the entire gamut of Information Technology Platform to help customers achieve better business results. Agile, efficient and cost effective technology infrastructure can be the differentiator that separates great companies from just good ones. We are the technology partners of choice for organizations looking to strategically transform, grow and lead in today’s challenging environment. We are distinctive amongst our peers for our known commitments to bring together best practices from around the globe and deploying ‘best – of – the – breed’ technology platform to achieve business goals of our customers.<br /><br /><b style="font-size: 25px;">Core Values</b><br /><br><b>Integrity :</b> Integrity is at the heart of everything we do. It defines our existence<br><b>Innovation :</b> It is our DNA.<br><b>Excellence :</b> We encourage a culture of customer centricity and environment of Excellence<br><b>Result :</b> We accept individual responsibility and expect to be accountable for results.<br><b>Code Of Ethics :</b> All at Polestar are bound by our abiding faith in the code of ethics that we have envisioned for ourselves.
+            </p>
+            <br><br>
+        </div>
+    </div>
+
+    <div class="iso-item">
+
+        <div class="item">
+            <img src="http://polestarconsulting.in/wp-content/uploads/2016/03/9001x2008-edited.png" alt="iso1" width="50%">
+        </div>
+
+        <div class="item">
+            <img src="http://polestarconsulting.in/wp-content/uploads/ISO-20000-1-2005.png" alt="iso2" width="50%">
+        </div>
+
+        <div class="item">
+            <img src="http://polestarconsulting.in/wp-content/uploads/2016/03/27001x2013-edited.png" alt="iso3" width="50%">
+        </div>
+
+    </div>
+
+    <section class="filter-iso">
+        <div class="iso-menu">
+            <ul>
+                <li class="active" data-filter="*">ISO 9001 : 2008</li>
+                <li data-filter="iso2">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ISO/IEC 20000-1:2005</li>
+                <li data-filter="iso3">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ISO 27001 : 2013</li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="percent">
+
+        <div class="description" style="margin-left: 2em;">
+            <p style="font-size: 100px; color: #815ab4 !important;">88+</p><br>
+            <h3 style="text-align: center; font-size: 25px; visibility: visible;">Years of Management Experience</h3>
+
+        </div>
+
+        <div class="description">
+            <p style="font-size: 100px; color: #2caaca !important;">40+</p><br>
+            <h3 style="text-align: center; font-size: 25px; visibility: visible;">Existing Clients</h3>
+        </div>
+
+        <div class="description">
+            <p style="font-size: 100px; color: #35bbaa !important;">80+</p><br>
+            <h3 style="text-align: center; font-size: 25px; visibility: visible;">Employees</h3>
+        </div>
+
+        <div class="description">
+            <p style="font-size: 100px; color: #ef6462 !important;">60+</p><br>
+            <h3 style="text-align: center; font-size: 25px; visibility: visible;">Successful Projects Delivered</h3>
+        </div>
+
+    </div>
+
+
+    <div class="tech">
+        <h1>Tech Alliances</h1>
+    </div>
+
+    <div class="container">
+        <!--- <a class="prev" onclick="plusSlides(-1)" &#10094</a>
+         <a class="next" onclick="plusSlides(1)" &#10095</a>-->
+
+        <div class="row">
+            <div class="column">
+                <img class="demo1 cursor" src="http://polestarconsulting.in/wp-content/uploads/2016/04/Microsoft.jpg" style="width: 100%;" onclick="currentSlide(1)" alt="img">
+            </div>
+
+            <div class="column">
+                <img class="demo1 cursor" src="http://polestarconsulting.in/wp-content/uploads/2016/04/HP.jpg" style="width: 100%;" onclick="currentSlide(2)" alt="img">
+            </div>
+
+            <div class="column">
+                <img class="demo1 cursor" src="http://polestarconsulting.in/wp-content/uploads/2016/04/Schneider.jpg" style="width: 100%;" onclick="currentSlide(3)" alt="img">
+            </div>
+
+            <div class="column">
+                <img class="demo1 cursor" src="http://polestarconsulting.in/wp-content/uploads/2016/04/veritas.jpg" style="width: 100%;" onclick="currentSlide(4)" alt="img">
+            </div>
+
+            <div class="column">
+                <img class="demo1 cursor" src="http://polestarconsulting.in/wp-content/uploads/2016/04/emerson.jpg" style="width: 100%;" onclick="currentSlide(5)" alt="img">
+            </div>
+
+            <div class="column">
+                <img class="demo1 cursor" src="http://polestarconsulting.in/wp-content/uploads/2016/04/oracle.jpg" style="width: 100%;" onclick="currentSlide(6)" alt="img">
+            </div>
+            <br />
+            <br />
+
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+
+
+    <footer class="footer">
+        <div class="container1">
+            <div class="row2">
+                <div class="col-md-5">
+                    <ul class="legals">
+                        <li>
+                            <a href="legacy.html" style="font-size: 16px; font-family: 'Ubuntu', sans-serif;">Legacy</a>
+                        </li>
+
+                        <li>
+                            <a href="sitemap.html" style="font-size: 16px; font-family: 'Ubuntu', sans-serif;">Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 credit" style="font-size: 30px; width: 100%; font-family: 'Ubuntu', sans-serif;">
+                    <p style="font-size: 16px; font-family: 'Ubuntu', sans-serif;">
+                        Copyright © 2022 Master Services
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "master-services",
+  "version": "0.0.0",
+  "description": "Master Services",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.0-beta1",
+    "ssl-root-cas": "^1.3.1"
+  }
+}

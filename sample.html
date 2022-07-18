@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Samples</title>
+</head>
+<body onload="slider()">
+    <nav class="navbar background" style="cursor: pointer;">
+        <img class="logo" src="images/logo.jpeg" alt="logo" style=" width: 10%; margin-left: 2em;" />
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="micon">
+            <ul class="nav-links">
+                <i class="material-icons" style="margin-left: 10em; ">home</i>
+                <li><a href="index.html" style="text-decoration: none;">Home</a></li>
+                <i class="material-icons">donut_large</i>
+                <li><a href="aboutus.html">About</a></li>
+                <i class="material-icons">business_center</i>
+                <li><a href="services.html"> Services</a></li>
+                <i class="material-icons">tv</i>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <i class="material-icons">timeline</i>
+                <li><a href="careers.html">Careers</a></li>
+                <i class="material-icons">contacts</i>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dark-bg text-center section-padding contact-wrap" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="arrow" style="margin: 0.67em 0; font-weight: bold; font-size: 30px; text-transform: uppercase; color: #353535; letter-spacing: 1px; padding-bottom: 0px; scroll-behavior: smooth; "><span> Samples</span></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="r" style="margin-top: 2em; margin-left: 8em; display: flex; ">
+        <div class="c" style="margin-left: 10em;">
+            <img src="http://polestarconsulting.in/wp-content/uploads/2016/03/cyberoam200x135-1.png" alt="hardware" style="width:100%; border-style: double;" onclick="currentSlide(1)"><br><br>
+            <br><br>
+        </div>
+
+        <div class="c" style="margin-left: 8em;">
+            <img src="http://polestarconsulting.in/wp-content/uploads/2016/03/dell200x135-1.png" alt="system" style="width:100%; border-style: double;" onclick="currentSlide(1)"><br><br>
+            <br><br>
+        </div>
+
+        <div class="c" style="margin-left: 8em;">
+            <img src="http://polestarconsulting.in/wp-content/uploads/2016/03/microsoft200x135-1.png" alt="staffing" style="width:100%; border-style: double;" onclick="currentSlide(1)"><br><br>
+            <br><br>
+        </div>
+    </div>
+
+    <div class="r" style="margin-top: 2em; margin-left: 8em; margin-bottom: 2em; display: flex; ">
+        <div class="c" style="margin-left: 10em;">
+            <img src="http://polestarconsulting.in/wp-content/uploads/2016/03/oracle200x135-1.png" alt="Biometric" style="width:100%; border-style: double;" onclick="currentSlide(1)"><br><br>
+            <br><br>
+        </div>
+
+        <div class="c" style="margin-left: 8em;">
+            <img src="http://polestarconsulting.in/wp-content/uploads/2016/03/polucom200x135-1.png" alt="Security" style="width:100%; border-style: double;" onclick="currentSlide(1)"><br><br>
+            <br><br>
+        </div>
+
+        <div class="c" style="margin-left: 8em;">
+            <img src="http://polestarconsulting.in/wp-content/uploads/2016/03/samsung200x135-1.png" alt="unified" style="width:100%; border-style: double;" onclick="currentSlide(1)"><br><br>
+            <br><br>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+
+    <div class="text">
+        <div>
+            <p style="font-size: 30px; text-align: center; margin-top: auto; font-family: 'Ubuntu', sans-serif; ">Like What You See?</p><br />
+        </div>
+    </div>
+
+
+    <div class="demo">
+
+        <div>
+            <a href="contactus.html" style="text-decoration:none">
+                <button class="button button1" style="margin-left: 33em;">Contact Us</button>
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container1">
+            <div class="row2">
+                <div class="col-md-5">
+                    <ul class="legals">
+                        <li>
+                            <a href="legacy.html" style="font-size: 16px; font-family: 'Ubuntu', sans-serif;">Legacy</a>
+                        </li>
+
+                        <li>
+                            <a href="sitemap.html" style="font-size: 16px; font-family: 'Ubuntu', sans-serif;">Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 credit" style="font-size: 30px; width: 100%; font-family: 'Ubuntu', sans-serif;">
+                    <p style="font-size: 16px; font-family: 'Ubuntu', sans-serif;">
+                        Copyright © 2022 Master Services
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

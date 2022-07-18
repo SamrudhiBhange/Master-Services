@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Profile</title>
+    <style>
+        body {
+            font-family: Calibri, Helvetica, sans-serif;
+            background-color: pink;
+        }
+
+        .container {
+            padding: 50px;
+            background-color: lightblue;
+        }
+
+        input[type=text], input[type=password], textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+            input[type=text]:focus, input[type=password]:focus {
+                background-color: pink;
+                outline: none;
+            }
+
+        div {
+            padding: 10px 0;
+        }
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        .registerbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+            .registerbtn:hover {
+                opacity: 1;
+            }
+    </style>
+</head>
+<body onload="slider()">
+    <nav class="navbar background" style="cursor: pointer;">
+        <ul class="nav-list" style="width: auto;">
+            <div class="logo"><img src="images/logo.jpeg" alt="logo" style=" width: 25%; margin-left: 35em;" /></div>
+            <li style="margin-left: 30em;"><a href="home.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+            <!-- <li><a href="index.html">Logout</a></li>-->
+
+
+        </ul>
+        <input type="checkbox" id="check" />
+        <label for="check">
+            <i class="material-icons" id="btn">menu</i>
+            <i class="material-icons" id="cancel">close</i>
+        </label>
+        <div class="sidebar">
+            <header>Dashboard</header>
+            <ul>
+                <li><a href="aboutus.html"><i class="material-icons">donut_large</i>About Us</a> </li>
+                <li><a href="services.html"><i class="material-icons">business_center</i> Services </a> </li>
+                <li><a href="portfolio.html"><i class="material-icons">tv</i>Portfolio </a> </li>
+                <li><a href="careers.html"><i class="material-icons">timeline</i>Careers </a> </li>
+                <li><a href="contactus.html"><i class="material-icons">contacts</i>Contact Us </a> </li>
+                <li><a href="index.html"><i class="material-icons">person</i> Admin Login</a> </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <form>
+        <div class="container">
+            <center>  <h1>Submit Profile</h1> </center>
+            <hr>
+            <label> <b>Firstname</b> </label>
+            <input type="text" name="firstname" placeholder="Firstname" size="15" required />
+            <label> <b>Middlename </b></label>
+            <input type="text" name="middlename" placeholder="Middlename" size="15" required />
+            <label> <b>Lastname </b></label>
+            <input type="text" name="lastname" placeholder="Lastname" size="15" required />
+            <div>
+                <label>
+                    <b>Course </b>
+                </label>
+
+                <select>
+                    <option value="---">---</option>
+                    <option value="BCA">BCA</option>
+                    <option value="BBA">BBA</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="MBA">MBA</option>
+                    <option value="MCA">MCA</option>
+                    <option value="M.Tech">M.Tech</option>
+                </select>
+            </div>
+            <div>
+                <label>
+                    <b>Gender </b><br />
+                </label><br>
+                <input type="radio" value="Male" name="gender" checked> <b>Male</b>
+                <input type="radio" value="Female" name="gender"> <b>Female</b>
+                <input type="radio" value="Other" name="gender"> <b>Other</b>
+
+            </div>
+            <label>
+
+                <br /> <b> Phone &emsp; </b><br />
+            </label>
+            <input type="text" name="country code" placeholder="Country Code" value="+91" size="2" style="width:20%;" />
+            <!--<input type="text" name="phone" placeholder="Mobile no." size="10" required />-->
+            <br /><b>Current Address </b><textarea cols="80" rows="5" placeholder="Current Address" value="address" required>
+</textarea>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="myfile"><b>Upload your resume:&emsp;</b></label>
+            <input type="file" id="myfile" name="myfile"><br><br>
+
+            <button type="submit" class="registerbtn"><a href="registration_form.html" style="text-decoration:none; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:white;"> Submit </a></button>
+    </form>
+</body>
+</html>
